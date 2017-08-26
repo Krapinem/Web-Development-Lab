@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+</head
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="#" method="post">
+
+Name: <input type="text" name="fname" id="fname"><br>
+Age: <input type="text" name="age" id="age"><br>
+Email: <input type="text" name="email" id="email"><br>
+
+
+<button type="button" onclick="myFunction()">Submit</button>
+
+<p id="output"></p>
+
+<script>
+function myFunction() {
+    var name,age,email, text;
+	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		
+	name = document.getElementById("fname").value;
+	age = document.getElementById("age").value;
+    email = document.getElementById("email").value;
+
+	
+    if (name.length >= 8 && !(isNaN(age)) && re.test(email)) {
+        text = "Validated";
+    } else {
+        text = "Invalid Inputs";
+    }
+    
+	document.getElementById("output").innerHTML = text;
+}
+</script>
+
+</body>
+</html> 

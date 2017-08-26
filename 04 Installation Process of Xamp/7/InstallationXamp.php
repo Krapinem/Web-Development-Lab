@@ -1,5 +1,7 @@
-<!DOCTYPE html>
 <html>
+<head>
+<title>Hello Php</title>
+</head>
 <body>
 
 <?php
