@@ -19,8 +19,8 @@ Steps
     8 Start the Apache and MySQL components. You can also start the other components, if you plan to use them.
     
     9 Verify the Apache install, by clicking on the Apache administrative link in the Control Panel.
-  
-   10 Verify the MySQL installation, by clicking on the MySQL administrative link in the XAMPP Control Panel.
+    
+    10 Verify the MySQL installation, by clicking on the MySQL administrative link in the XAMPP Control Panel.
         
   If the verification steps are successful, 
   XAMPP should be successfully installed on your PC. 
